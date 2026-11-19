@@ -1,0 +1,44 @@
+class Employee:
+
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+
+    def work(self):
+        print("Employee is working")
+
+
+
+class Manager(Employee):
+
+    def work(self):
+        print("Manager is managing the team")
+
+
+
+class Developer(Employee):
+
+    def work(self):
+        print("Developer is writing code")
+
+
+
+manager1 = Manager("Rahim", 50000)
+
+developer1 = Developer("Karim", 40000)
+
+
+print(" \n maneger information ")
+
+print("Name:", manager1.name)
+print("Salary:", manager1.salary)
+
+manager1.work()
+
+
+print("\n devloper information")
+
+print("Name:", developer1.name)
+print("Salary:", developer1.salary)
+
+developer1.work()
